@@ -25,6 +25,8 @@ bilibili会员购中的漫展演出信息查询与储存，以及bilibili会员�
 
 实测效果极差
 
+2023年7月8日
+增加类型判断，避免选错日期/票种
 
 
 期待在
@@ -33,6 +35,9 @@ BILIBILI MACRO LINK 2023--魑魅魍魉的现场
 
 与你们一同热情地打call
 
-![某图片](https://github.com/lovebili/bilibili_show/assets/138492076/1115f6f4-4bba-4fc8-ad03-e224edcaa920)
-2023年7月22日。
-
+# 如何使用
+测试环境为Windows10、Python3.8、Firefox
+1. 安装python3、pip
+2. pip3 install -r requirements.txt
+3. 准备cookies，可以改下 登录xxx.py，也可以用shanghai_bw_2023_vip.py
+4. 使用管理员权限的powershell, cd 到仓库路径 python3 shanghai_bw_2023_vip.py
