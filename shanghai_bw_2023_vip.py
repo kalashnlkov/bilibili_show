@@ -46,13 +46,13 @@ with open('./config.json', 'r') as f:
     config = json.load(f)
 
 
+# FIXME: can't terminate when CTRL-C. might a subprocess and signal handler will help?
 def voice(message):
     engine.setProperty('volume', 1.0)
-    engine.say(message)
-    engine.runAndWait()
-    engine.stop()
-    voice(message)
-
+    while True:
+        engine.say(message)
+        engine.runAndWait()
+        time.sleep(1)
 
 # 设置抢购时间
 TargetTime = "2013-10-3 8:00:00.00000000"
